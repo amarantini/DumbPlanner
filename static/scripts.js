@@ -71,8 +71,4 @@ $(document).ready(function() {
 			$(wrapper).append('<input type="text" class="form-control" name="course" id="courseHolder"><br>'); //add input box <a href="#" class="remove_field">Remove</a>
 		}
 	});
-	
-	$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-		e.preventDefault(); $(this).parent('div').remove('<input type="text" class="form-control" name="course" id="courseHolder"> <br>'); x--;
-	})
-});
+})

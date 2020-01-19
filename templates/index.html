@@ -11,7 +11,7 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
-  <script href= "{{ url_for('static',filename='../static/scripts.js') }}"></script>
+  <script src= "{{ url_for('static',filename='../static/scripts.js') }}"></script>
   <!-- <link rel="stylesheet" type="text/css" href="./style2.css"> -->
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='../static/style/style.css') }}">
 
@@ -22,22 +22,24 @@
 </head>
 
 <body>
-  <h2>Please input the courses you have enrolled in every quarter: </h2>
+  <h1 style="margin-top: 50px; text-align: center;">Dumb Planner (for CS major only)</h1>
+  <h2 style="margin-top: 50px; text-align: center;">Please input the courses you have enrolled in every quarter: </h2>
 
   <div class="container">
+    <form method="POST">
     <div class="row r1">
       <div class="col-sm-4 c1">
         <h3>Fall</h3>
 
         <div class="input_fields_wrap">
           <button class="add_field_button">Add More Fields</button>
-          <div>
-            <form class="courseList" method="POST"></form>
+          <div class="courseList">
+            
               <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-            </form>
+            
           </div>
         </div>
       </div>
@@ -47,12 +49,12 @@
         <div class="input_fields_wrap">
           <button class="add_field_button">Add More Fields</button>
           <div>
-            <form class="courseList" method="POST">
+            <!--<form class="courseList" method="POST">-->
               <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-            </form>
+            <!--</form>-->
           </div>
         </div>
       </div>
@@ -61,12 +63,12 @@
           <div class="input_fields_wrap">
             <button class="add_field_button">Add More Fields</button>
             <div>
-              <form class="courseList" method="POST">
+              <!--<form class="courseList" method="POST"-->
                 <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-              </form>
+              <!--</form>-->
             </div>
           </div>
         </div>
@@ -79,12 +81,12 @@
         <div class="input_fields_wrap">
           <button class="add_field_button">Add More Fields</button>
           <div>
-            <form class="courseList" method="POST">
+            <!--<form class="courseList" method="POST">-->
               <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-            </form>
+            <!--</form>-->
           </div>
         </div>
       </div>
@@ -94,12 +96,12 @@
         <div class="input_fields_wrap">
           <button class="add_field_button">Add More Fields</button>
           <div>
-            <form class="courseList" method="POST">
+            <!--<form class="courseList" method="POST">-->
               <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-            </form>
+            <!--</form>-->
           </div>
         </div>
       </div>
@@ -108,12 +110,12 @@
           <div class="input_fields_wrap">
             <button class="add_field_button">Add More Fields</button>
             <div>
-              <form class="courseList" method="POST">
+              <!--<form class="courseList" method="POST">-->
                 <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-              </form>
+              <!--</form>-->
             </div>
           </div>
         </div>
@@ -126,12 +128,12 @@
         <div class="input_fields_wrap">
           <button class="add_field_button">Add More Fields</button>
           <div>
-            <form class="courseList" method="POST">
+            <!--<form class="courseList" method="POST">-->
               <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-            </form>
+            <!--</form>-->
           </div>
         </div>
       </div>
@@ -141,12 +143,12 @@
         <div class="input_fields_wrap">
           <button class="add_field_button">Add More Fields</button>
           <div>
-            <form class="courseList" method="POST">
+            <!--<form class="courseList" method="POST">-->
               <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-            </form>
+            <!--</form>-->
           </div>
         </div>
       </div>
@@ -155,12 +157,12 @@
           <div class="input_fields_wrap">
             <button class="add_field_button">Add More Fields</button>
             <div>
-              <form class="courseList" method="POST">
+              <!--<form class="courseList" method="POST">-->
                 <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-              </form>
+              <!--</form>-->
             </div>
           </div>
         </div>
@@ -173,12 +175,12 @@
         <div class="input_fields_wrap">
           <button class="add_field_button">Add More Fields</button>
           <div>
-            <form class="courseList" method="POST">
+            <!--<form class="courseList" method="POST">-->
               <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-            </form>
+            <!--</form>-->
           </div>
         </div>
       </div>
@@ -188,12 +190,12 @@
         <div class="input_fields_wrap">
           <button class="add_field_button">Add More Fields</button>
           <div>
-            <form class="courseList" method="POST">
+            <!--<form class="courseList" method="POST">-->
               <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
               <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-            </form>
+            <!--</form>-->
           </div>
         </div>
       </div>
@@ -202,12 +204,12 @@
           <div class="input_fields_wrap">
             <button class="add_field_button">Add More Fields</button>
             <div>
-              <form class="courseList" method="POST">
+              <!--<form class="courseList" method="POST">-->
                 <input type="text" class="form-control" name="course" placeholder="CMPSC8" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
                 <input type="text" class="form-control" name="course" id="courseHolder"> <br>
-              </form>
+              <!--</form>-->
             </div>
           </div>
         </div>
@@ -215,8 +217,9 @@
 <!--Forth row-->
 
           <input type="submit" class="btn btn-info btn-block bt-submit" value="Submit">
-
-          <div>
+        </form>
+          <div style="margin-top: 50px; margin-bottom: 100px;">
+            <h3>You still need these courses:<br></h3>
             <p style="font-family: Arial, Verdana, Sans-serif; font-size: 20px; margin-left: 50px; 
             margin-right: 50px;">{{output}}</p>
           </div>

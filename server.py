@@ -10,11 +10,13 @@ def render_main():
 def check_course_list():
     if request.method == 'POST':
         course_list = []
-    for key, val in request.form.items():
-        if key.startswith("course"):
-            course_list += val
-    checked_course_list = deleteenrolledcourse(course_list)
-    return render_template('index.html',output=checked_course_list)
+        course_list = request.form.getlist('course')
+        
+        checked_course_list = deleteenrolledcourse(course_list)
+        result = ""
+        for i in checked_course_list:
+            result += i+", "
+        return render_template('index.html',output=result)
 
 
 
