@@ -70,5 +70,5 @@ $(document).ready(function() {
 		if(x < max_fields){ //max input box allowed
 			$(wrapper).append('<input type="text" class="form-control" name="course" id="courseHolder"><br>'); //add input box <a href="#" class="remove_field">Remove</a>
 		}
-	});
+  });
 })

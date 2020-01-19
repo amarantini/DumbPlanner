@@ -8,6 +8,7 @@ def render_main():
 
 @app.route('/', methods = ['POST', 'GET'])
 def check_course_list():
+
     if request.method == 'POST':
         course_list = []
         course_list = request.form.getlist('course')
