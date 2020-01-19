@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .c1 {
+    outline: 1px solid
+  }
+  
+  .c2 {
+    outline: 1px solid
+  }
+  
+  .c3 {
+    outline: 1px solid
+  }
+  
+  
+  
+  h3 {
+    text-align: center;
+  }
+  
+  input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .bt-submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  #courseHolder {
+    width:50%; 
+    display: block; 
+    margin : 0 auto;
+  }
+  
+  .add_field_button {
+    display: block; 
+    margin : 0 auto;
+  }
+  
